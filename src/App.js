@@ -1,18 +1,15 @@
 import { Route, Link,Routes } from "react-router-dom";
-import { Cart, ErrorPage, Home, Wishlist } from "./routes";
-
+import { NavBar } from "./components";
+import { Cart, ErrorPage, Home, ProductListing, Wishlist } from "./routes";
+import "./styles.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/Cart">Cart</Link>
-        <Link to="/Wishlist">Wishlist</Link>
-      </nav>
+      <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Products" element={<ProductListing/>}/>
         <Route path="/Cart" element={<Cart />} />
         <Route path="/Wishlist" element={<Wishlist />} />
         <Route path="*" element={<ErrorPage/>} />
