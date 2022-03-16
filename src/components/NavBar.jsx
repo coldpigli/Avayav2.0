@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import avavyaLogo from "../assets/avavya-logo.png";
 import avatar from "../assets/avatar-4.jpg";
 import { NavLink } from 'react-router-dom';

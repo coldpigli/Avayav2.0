@@ -1,5 +1,5 @@
 import { Route, Link,Routes } from "react-router-dom";
-import { NavBar } from "./components";
+import { Footer, NavBar } from "./components";
 import { Cart, ErrorPage, Home, ProductListing, Wishlist } from "./routes";
 import "./styles.css";
 
@@ -14,6 +14,7 @@ function App() {
         <Route path="/Wishlist" element={<Wishlist />} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

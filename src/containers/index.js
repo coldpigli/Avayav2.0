@@ -1,2 +1,3 @@
 import IconBadge from "./IconBadge";
-export {IconBadge};
+import CategorySection from "./CategorySection";
+export {IconBadge, CategorySection};
