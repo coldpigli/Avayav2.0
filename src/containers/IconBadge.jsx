@@ -12,4 +12,4 @@ const IconBadge = ({nextPath, iconName, count }) => {
   );
 }
 
-export default IconBadge
+export default IconBadge;
