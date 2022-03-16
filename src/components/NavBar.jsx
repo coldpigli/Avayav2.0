@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import avavyaLogo from "../assets/avavya-logo.png";
 import avatar from "../assets/avatar-4.jpg";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { IconBadge } from '../containers';
 
 const NavBar = () => {  
+
     return (
       <div className="navigation-top w-75">
           <header className="nav-bar left-aligned">
@@ -12,12 +13,12 @@ const NavBar = () => {
                   <img src={avavyaLogo} alt="avavya-logo"/>
               </div>
               <section className="nav-links flex">
-                  <Link to="/" className="nav-item paragraph2 txt-gray txt-brand-color">
+                  <NavLink to="/" className="nav-item paragraph2">
                       Home
-                  </Link>
-                  <Link to="/Products" className="nav-item paragraph2 txt-gray">
+                  </NavLink>
+                  <NavLink to="/Products" className="nav-item paragraph2 txt-gray">
                       Shop
-                  </Link>
+                  </NavLink>
               </section>
               <section className="user-info children-middle">
                   <div className="user-profile children-middle">                 

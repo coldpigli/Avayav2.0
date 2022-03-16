@@ -67,6 +67,10 @@
     margin-left: 0;
 }
 
+.active{
+    color: var(--brand-color);
+}
+
 .brand-img{
     width: 10rem;
     height: 4rem;
